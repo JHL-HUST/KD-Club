@@ -232,6 +232,7 @@ int Graph::fastLB()
     }
     cout << "FastLB finishes! Find a clique of size " << k_defective.size() << " at time " << Utility::integer_to_string(t.elapsed()).c_str() << "." << endl;
     delete[] nodes;
+    return k_defective.size();
 }
 ui Graph::degree_based_heu(ui *nodes, bool *in_cand, ui &s_end, ui &r_end)
 {
